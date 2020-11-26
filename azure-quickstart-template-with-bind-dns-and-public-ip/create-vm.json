@@ -30,9 +30,9 @@
       "type": "Microsoft.Compute/virtualMachines",
       "name": "[concat(parameters('names').dnsVm)]",
       "plan": {
-        "name": "7_4",
-        "publisher": "cloudera",
-        "product": "cloudera-centos-os"
+        "name": "7.5",
+        "publisher": "OpenLogic",
+        "product": "CentOS"
       },
       "location": "[resourceGroup().location]",
       "properties": {
@@ -49,9 +49,9 @@
         },
         "storageProfile": {
           "imageReference": {
-            "publisher": "cloudera",
-            "offer": "cloudera-centos-os",
-            "sku": "7_4",
+            "publisher": "OpenLogic",
+            "offer": "CentOS",
+            "sku": "7.5",
             "version": "latest"
           },
           "osDisk": {
