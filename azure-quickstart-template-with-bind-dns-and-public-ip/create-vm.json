@@ -30,7 +30,7 @@
       "type": "Microsoft.Compute/virtualMachines",
       "name": "[concat(parameters('names').dnsVm)]",
       "plan": {
-        "name": "CentOS",
+        "name": "7.5.201808150",
         "publisher": "OpenLogic",
         "product": "CentOS"
       },
